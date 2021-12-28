@@ -1,6 +1,15 @@
+* {
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+
 .mainContainer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+ 
 }
 
 
@@ -8,8 +17,8 @@
   display: flex;
   background-color: rgb(102, 84, 179);
   color: white;
-  padding: 2em;
-  margin: 4px;
+  padding: 16px;
+  
   
   
 }
@@ -17,7 +26,7 @@
 .main {
   flex: 8;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   text-transform: uppercase;
   color: black;
   font-weight: bolder;
@@ -27,19 +36,19 @@
 
 .iconContainer {
   display: flex;
-  flex: 1;
+  flex: 2;
   text-align: center;
   justify-content: space-evenly;
-  
+  font-size: 20px;
 }
 
 .cartIcon {
   width: 45%;
-  margin: 2px;
   border: 1px solid black;
   padding: 4px;
   text-decoration: none;
   color: white;
+  
   
 }
 
@@ -47,7 +56,7 @@
  width: 40%;
   border: 1px solid black;
   padding: 4px;
-  margin: 1px;
+
 }
 
 .cartIcon:hover {
@@ -59,52 +68,58 @@
 }
 
 .productWrapper {
-  width: 400px;
-  height: 600px;
-  margin: 4px;
-  
-  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .productClass {
-  flex: 2;
-  margin: 20px;
+  width: 390px;
+ height: 650px;
+  margin: 20px 10px; 
+ 
 }
 
 .image {
-  width: 100%;
-  height: 80%;
-  background-color: rgb(167, 123, 123);
-  
+  width: 100%; 
+  height: 65%;
+ 
+ 
+
 }
 
 img {
   width: 100%;
-  height: 100%;
+  height: 100%
 }
 
 .brand {
   margin: 4px;
   color: black;
-  font-size: 16px;
+  font-size: 24px;
 
 }
 .brandCategory {
   margin: 4px;
-  font-size: 12px;
+  font-size: 20px;
   color: rgb(66, 63, 63);
+  
 }
 .wishlist, .addtocart {
   border: 1px solid rgb(59, 194, 140);
   padding: 4px;
   text-align: center;
   margin: 4px;
+  font-size: 24px;
+  
 }
 
 .price {
-  margin: 4px;
+  margin: 6px 4px;
   font-weight: bold;
   font-size: 20px;
+  font-size: 26px;
 }
 
 .wishlist:hover {
@@ -138,3 +153,61 @@ img {
   display: inline-block;
 }
 
+@media only screen and (max-width: 600px) {
+  .iconContainer {
+    flex: 4;
+    font-size: 0.8em;
+  }
+  .main {
+    flex: 7;
+    font-size: 1.2em;
+  }
+  .cartIcon {
+    width: 100%;
+    padding: 0.2em;
+    text-align: center; 
+  }
+  .signIcon {
+   width: 100%;
+    padding: 0.1em;
+  }
+  .cartQty {
+    width: 1em;
+    height: 1.4em;
+    
+  }
+  
+  .productClass {
+    width: 44%;
+   height: 100%;
+   margin: 0.6em;
+  }
+ 
+  .image {
+    height: 9em;
+  }
+  .brand {
+    margin: 0.1em;
+    font-size: 0.8em;
+    
+  }
+  .brandCategory {
+    margin: 0.1em;
+    font-size: 0.7em;
+   
+    
+  }
+  .wishlist, .addtocart {
+    margin: 0.1em;
+    font-size: 0.6em;
+    padding: 0.2em;
+    
+    
+  }
+  
+  .price {
+    margin: 0.2em 0.1em;
+    font-size: 0.8em;
+    
+  }
+}

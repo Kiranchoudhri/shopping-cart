@@ -1,14 +1,15 @@
 .cartMain1 {
     display: flex;
     justify-content: center;
-    
+    font-size: 24px;
    
 }
 
 
 .cartContainer1 {
-    width: 800px;
+    width: 50%;
     background-color: rgb(243, 241, 241);
+    height: 280px;
     border-radius: 10px;
     display: flex;
     margin: 10px;
@@ -50,19 +51,24 @@ img {
     display: flex;
     margin:4px 2px;
     padding: 2px;
-    flex: 1
+    flex: 1;
+   
 }
 
 .numOfItems1 {
-    width: 40px;
-    height: 20px;
-    margin: 2px
+    width: 60px;
+    height: 30px;
+    margin: 8px;
+    font-size: 24px;
+    border: 0.2px solid black;
 }
 
 .button1 {
-    margin: 2px;
-    width: 40px;
-    height: 25px;
+    margin: 8px;
+    width: 60px;
+    height: 30px;
+    font-size: 24px;
+    background-color: grey;
 }
 
 .brand1 {
@@ -80,9 +86,9 @@ img {
     flex: 1
 }
 .checkoutContainer {
-    width: 800px;
+    width: 50%;
     padding: 4px;
-    margin: auto
+    margin: auto;
   }
   
   .cartSummary {
@@ -91,10 +97,11 @@ img {
     border-radius: 10px;
     padding: 4px;
     font-weight: bold;
+    font-size: 24px;
   }
 
   .total {
-      font-size: 24px;
+      font-size: 30px;
       font-weight: bolder;
       display: flex;
       justify-content: flex-end;
@@ -104,6 +111,7 @@ img {
       display: flex;
       justify-content: flex-end;
       margin: 10px;
+      font-size: 24px;
   }
 .checkoutButton {
     padding: 8px;
@@ -114,3 +122,101 @@ img {
       
 }
 
+@media only screen and (max-width: 600px) {
+    .cartContainer1 {
+        width: 100%;
+        margin: 2px;
+        height: 120px;
+    }
+      .checkoutContainer {
+          width: 100%;
+          margin: 0px;
+          font-size: 1em;
+      } 
+      .image1 {
+          flex: 1.5;
+      }
+      .contents1 {
+        padding: 2px;
+       flex: 3;
+    }
+    
+    .delete1 {
+        flex: 0.4;
+        margin: 2px;
+       font-size: 0.6em;
+        
+    }
+    
+    .qtyContainer1 {
+        
+        margin:1px 1px;
+        padding: 1px;
+        font-size: 0.6em;
+        
+    }
+    
+    .numOfItems1 {
+        width: 32px;
+        height: 14px;
+        
+    }
+    
+    .button1 {
+       
+        width: 32px;
+        height: 12px;
+        margin: 2px;
+    }
+    
+    .brand1 {
+        padding: 0.5px;
+        margin: 0.5px;
+        font-size: 0.6em;
+    }
+    
+    .productDescription1 {
+        flex: 1;
+        font-size: 0.6em;
+    }
+    
+    .price1 {
+        font-size: 0.6em;
+        margin: 1px;
+}
+.cartSummary {
+    padding: 1px;
+    font-size: 0.9em;
+    text-align: center;
+  
+  }
+
+  .total {
+      font-size: 0.8em;
+      margin: 2px;
+  }
+  .checkoutButtonContainer {
+      margin: 2px;
+  }
+.checkoutButton {
+    padding: 4px;
+    font-size: 0.6em;
+    
+      
+}
+.numOfItems1 {
+    width: 20px;
+    height: 15px;
+    margin: 2px;
+    font-size: 0.7em;
+    border: 0.2px solid black;
+}
+
+.button1 {
+    margin: 3px;
+    width: 20px;
+    height: 12px;
+    font-size: 0.6em;
+    background-color: grey;
+}
+}

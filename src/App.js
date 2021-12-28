@@ -9,8 +9,6 @@ import Basket from './Components/Basket';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom' 
 
 
-
-
 function App() {
   return (
         <Provider store = {Store}>
@@ -18,8 +16,9 @@ function App() {
        <Router>
            
              <Header />
+            
 
-           
+        
            <Routes>
              <Route path = "/products" element = {<Products />} />
              <Route path = "/basket" element = {<Basket />} />

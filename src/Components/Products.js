@@ -14,7 +14,7 @@ const Products = (props) => {
         axios.get("https://run.mocky.io/v3/05e9651d-528e-4d7c-a60b-bae8f09684c6")
         .then(response => {
             console.log(response.data.products)
-              let items = response.data.products.slice(0, 9) 
+              let items = response.data.products.slice(0, 12) 
            props.loadItems(items)
          
         })
@@ -60,9 +60,5 @@ const mapStateToProps = (state) => {
     }
 }
 
-//  const mapDispatchTOProps = (dispatch) => {
-//     return {
-//         setItems: () => dispatch(loadItems())
-//     }
-//  }
+
 export default connect(mapStateToProps, actions)(Products)

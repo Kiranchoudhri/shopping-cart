@@ -1,10 +1,11 @@
 import React from 'react'
+import '../App.css'
 import {connect} from 'react-redux'
 import { addedToCart } from '../Redux/Shopping/ShoppingAction'
 
 const Product = ({productData, addedToCart}) => {
     return (
-        <div className='productClass' key = {productData.productID}>
+        <div className='productClass'>
         <div className='productWrapper'>
             <div className='image'><img src= {productData.images[0].src}/></div>
            
